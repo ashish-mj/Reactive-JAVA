@@ -11,6 +11,8 @@ public class ObservableUsingCreateEmitter {
 		emitter.onNext("three");
 		emitter.onComplete();
 		});
+		
+		source.subscribe(s -> System.out.println(s));
 
 	}
 
